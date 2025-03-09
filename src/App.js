@@ -7,10 +7,20 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Test from './components/Test';
+import TestArray from './components/TestArray';
 
 import './styles/App.css'
 
 function App() {
+
+  const users = [
+    {id:'1', name:'Alice', age:20},
+    {id:'2', name:'Bob', age:21},
+    {id:'3', name:'Chris', age:22},
+    {id:'4', name:'David', age:23},
+    {id:'5', name:'Ella', age:24}
+  ]
+
   return (
     <div className="App">
       <Header/>
@@ -22,9 +32,10 @@ function App() {
         <Route path='/about' element={<About/>}/>
       </Routes>
 
-      <Test text='props 전달 테스트'></Test>
+      <TestArray users={users} /> 
 
       <Footer/>
+
     </div>
   );
 }
