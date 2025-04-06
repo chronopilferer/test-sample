@@ -32,3 +32,15 @@ width: 100%;
     background-position: center;
     color: white;
 }
+
+.footer-links a {
+  color: inherit;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  transform: scale(1.3);
+}
