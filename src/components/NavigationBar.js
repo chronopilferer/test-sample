@@ -4,13 +4,17 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import { FaHome } from "react-icons/fa";
+
 import '../styles/styles.css'
 
 function NavigationBar() {
   return (
     <Navbar sticky="top" expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="/">Home Icon</Navbar.Brand>
+      <Container className='nav-container'>
+        <Nav.Link href="/">
+          <FaHome className="nav-icon-link" />
+        </Nav.Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
