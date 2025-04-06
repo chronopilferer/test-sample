@@ -1,0 +1,21 @@
+.nav-link-hover-underline {
+    position: relative;
+    display: inline-block; 
+    text-decoration: none;
+    padding-bottom: 1px; 
+}
+
+.nav-link-hover-underline::after {
+content: "";
+position: absolute;
+width: 0;
+height: 2px;
+left: 0;
+bottom: 0;
+background-color: red;
+transition: width 0.3s ease;
+}
+
+.nav-link-hover-underline:hover::after {
+width: 100%;
+}
