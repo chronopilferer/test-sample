@@ -1,15 +1,11 @@
 import React from 'react';
 
-import NavigationBar from '../components/NavigationBar';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
 
 function Home() {
   return (
     <div>
-      <NavigationBar />
       <Header />
-
         <main className="container mx-auto px-4 py-8">
           <section id="projects" className="mb-8">
             <h2 className="text-2xl font-bold mb-4">프로젝트</h2>
@@ -26,8 +22,6 @@ function Home() {
             <p>여기에 연락처 내용을 추가하세요.</p>
           </section>
         </main>
-      
-      <Footer />
     </div>
   );
 }
